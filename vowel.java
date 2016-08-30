@@ -1,20 +1,14 @@
-  public static void main(String[] args) {
-        System.out.println("enter the letter");
+public class JavaApplication8 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("enter the string");
         Scanner sc=new Scanner(System.in);
-        char ch;
-        ch=sc.next().charAt(0);
-        if(ch=='a'|| ch=='A'|| ch=='e'|| ch=='E'|| ch=='i'|| ch=='I'||ch=='o'||ch=='O'||ch=='u'||ch=='U')
-        {
-            System.out.println("vowel");
-        }
-        else{
-            
-            System.out.println("consonants");
-        }
-           
+        String str=sc.nextLine();
+       String s=str.replaceAll("[aeiouAEIOU]","");
+        System.out.println(""+s);
         
-        }
-        
-        
-        
-        // TODO cod
+        // TODO code application logic here
+    }
